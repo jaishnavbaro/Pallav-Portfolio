@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Goroi - Full-Stack Developer & Software Engineer. Explore my projects, skills, and experience.">
+    <title>Goroi | Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>Goroi<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="hamburger-btn" id="hamburger" aria-label="Open mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for new projects & opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building modern, scalable &amp; <span class="gradient-text">impactful web experiences</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Hi, I'm <strong class="name-highlight">Goroi</strong>. I am a passionate 
+                        <span class="typing-container">
+                            <span class="typed-text" id="typed-text"></span><span class="typing-cursor">|</span>
+                        </span>
+                    </p>
+
+                    <p class="hero-description">
+                        I specialize in building responsive, high-performance web applications with clean code, elegant user interfaces, and robust architectures.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#resume" class="btn btn-ghost" title="Download CV">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:notnav681@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-wrapper">
+                        <!-- Code Mockup Card -->
+                        <div class="code-card">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="file-title">developer.config.ts</span>
+                            </div>
+                            <div class="code-body">
+                                <pre><code><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">name</span>: <span class="token-string">"Goroi"</span>,
+  <span class="token-property">title</span>: <span class="token-string">"Full-Stack Developer"</span>,
+  <span class="token-property">location</span>: <span class="token-string">"Remote / Global"</span>,
+  <span class="token-property">passion</span>: <span class="token-string">"Clean Code &amp; Great UX"</span>,
+  <span class="token-property">skills</span>: [
+    <span class="token-string">"React"</span>, <span class="token-string">"TypeScript"</span>,
+    <span class="token-string">"Node.js"</span>, <span class="token-string">"Modern CSS"</span>
+  ],
+  <span class="token-property">status</span>: <span class="token-string">"Open to Collaborate"</span>
+};</code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-top-right">
+                            <div class="badge-icon icon-code">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-sub">Quality</span>
+                                <span class="badge-main">Clean Code</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-left">
+                            <div class="badge-icon icon-rocket">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-sub">Speed</span>
+                                <span class="badge-main">Fast &amp; Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="container stats-bar">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="15">15+</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="3">3+</h3>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="100">100%</h3>
+                    <p class="stat-label">Commitment &amp; Quality</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="12">12+</h3>
+                    <p class="stat-label">Tech Tools Mastered</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-regular fa-user"></i> About Me</span>
+                    <h2 class="section-title">Driven by Curiosity, <span class="gradient-text">Powered by Code</span></h2>
+                    <p class="section-desc">Here is a brief overview of my journey, technical background, and what drives my work every day.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card-left">
+                        <div class="about-avatar-card">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-inner">
+                                <div class="avatar-initials">G</div>
+                                <h4>Goroi</h4>
+                                <p class="avatar-role">Software Developer</p>
+                                <div class="avatar-tags">
+                                    <span class="pill">Problem Solver</span>
+                                    <span class="pill">Tech Enthusiast</span>
+                                    <span class="pill">Continuous Learner</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-info-card">
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div>
+                                        <span class="info-label">Location</span>
+                                        <span class="info-val">Available Worldwide (Remote)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <span class="info-label">Email</span>
+                                        <span class="info-val">notnav681@gmail.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <div>
+                                        <span class="info-label">Availability</span>
+                                        <span class="info-val info-highlight">Immediate / Freelance &amp; Full-time</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <h3>Passionate about crafting seamless web solutions</h3>
+                        <p class="about-text">
+                            Hello! I'm <strong>Goroi</strong>, a developer who loves transforming concepts into elegant, intuitive digital realities. I enjoy solving complex engineering challenges with modern web technologies, focusing on clean architecture, performance, accessibility, and user delight.
+                        </p>
+                        <p class="about-text">
+                            Whether it's building interactive user interfaces, designing robust backend APIs, or optimizing application delivery, I thrive in fast-paced environments where curiosity and continuous improvement lead the way.
+                        </p>
+
+                        <div class="about-highlights-grid">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h4>Modern Stack</h4>
+                                    <p>Proficient with latest frameworks, tools, and best practices.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                                <div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Mobile-first layouts ensuring flawless UX across all viewports.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+                                <div>
+                                    <h4>Performance Focused</h4>
+                                    <p>Optimized assets, fast load times, and smooth 60fps animations.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>
+                                    <h4>Clean &amp; Maintainable</h4>
+                                    <p>Well-documented, modular code following industry standards.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary">Work With Me</a>
+                            <a href="#projects" class="btn btn-outline">Explore Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-layer-group"></i> My Toolbox</span>
+                    <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+                    <p class="section-desc">The modern tools and technologies I use to bring ideas to life.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-cyan">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div>
+                                <h3>Frontend Development</h3>
+                                <p>Creating responsive, intuitive user interfaces</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-chip"><i class="fa-brands fa-html5"></i> HTML5</div>
+                            <div class="skill-chip"><i class="fa-brands fa-css3-alt"></i> CSS3 / SCSS</div>
+                            <div class="skill-chip"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+                            <div class="skill-chip"><i class="fa-brands fa-react"></i> React.js</div>
+                            <div class="skill-chip"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+                            <div class="skill-chip"><i class="fa-solid fa-code"></i> TypeScript</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-purple">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div>
+                                <h3>Backend &amp; APIs</h3>
+                                <p>Building robust server logic and data flows</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-chip"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                            <div class="skill-chip"><i class="fa-solid fa-network-wired"></i> Express.js</div>
+                            <div class="skill-chip"><i class="fa-brands fa-python"></i> Python</div>
+                            <div class="skill-chip"><i class="fa-solid fa-arrows-split-up-and-left"></i> RESTful APIs</div>
+                            <div class="skill-chip"><i class="fa-solid fa-key"></i> JWT / Auth</div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Cloud -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-green">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div>
+                                <h3>Databases &amp; Cloud</h3>
+                                <p>Storing, managing, and querying data</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-chip"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+                            <div class="skill-chip"><i class="fa-solid fa-database"></i> PostgreSQL / SQL</div>
+                            <div class="skill-chip"><i class="fa-solid fa-fire"></i> Firebase</div>
+                            <div class="skill-chip"><i class="fa-brands fa-docker"></i> Docker (Basics)</div>
+                            <div class="skill-chip"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel / Netlify</div>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools & Workflow -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon icon-amber">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <div>
+                                <h3>Tools &amp; Workflow</h3>
+                                <p>Optimizing development speed and collaboration</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+                            <div class="skill-chip"><i class="fa-solid fa-code"></i> VS Code</div>
+                            <div class="skill-chip"><i class="fa-brands fa-npm"></i> NPM / Yarn</div>
+                            <div class="skill-chip"><i class="fa-solid fa-terminal"></i> PowerShell / Bash</div>
+                            <div class="skill-chip"><i class="fa-brands fa-figma"></i> Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Portfolio</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-desc">A selection of recent projects demonstrating my technical capabilities and design sensibility.</p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="tools">Tools &amp; APIs</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-preview">
+                            <div class="project-preview-mockup mockup-1">
+                                <div class="mockup-screen">
+                                    <i class="fa-solid fa-cart-shopping project-mockup-icon"></i>
+                                    <span>E-Commerce Platform</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link" title="Live Preview">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                            <h3 class="project-title">NextGen E-Commerce Suite</h3>
+                            <p class="project-desc">
+                                A full-stack e-commerce solution featuring product cataloging, secure checkout via Stripe, user authentication, and an intuitive admin dashboard.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-btn-link highlight">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-preview">
+                            <div class="project-preview-mockup mockup-2">
+                                <div class="mockup-screen">
+                                    <i class="fa-solid fa-chart-line project-mockup-icon"></i>
+                                    <span>Analytics Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link" title="Live Preview">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                            <h3 class="project-title">Pulse Dashboard UI</h3>
+                            <p class="project-desc">
+                                A high-performance real-time data visualization dashboard with dark mode, interactive charts, filterable tables, and customizable metrics.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-btn-link highlight">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-preview">
+                            <div class="project-preview-mockup mockup-3">
+                                <div class="mockup-screen">
+                                    <i class="fa-solid fa-comments project-mockup-icon"></i>
+                                    <span>Real-Time Collaboration</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link" title="Live Preview">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <h3 class="project-title">TeamSync Collab App</h3>
+                            <p class="project-desc">
+                                Instant messaging and live document collaboration platform with channels, direct messaging, active typing indicators, and file sharing.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-btn-link highlight">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="tools">
+                        <div class="project-preview">
+                            <div class="project-preview-mockup mockup-4">
+                                <div class="mockup-screen">
+                                    <i class="fa-solid fa-bolt-lightning project-mockup-icon"></i>
+                                    <span>REST API Generator</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link" title="Live Preview">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">CLI Tool</span>
+                                <span class="tag">TypeScript</span>
+                            </div>
+                            <h3 class="project-title">DevScaffold CLI</h3>
+                            <p class="project-desc">
+                                A developer command-line interface tool to scaffold full-stack production boilerplates with database configuration, authentication, and testing out of the box.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-btn-link highlight">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Journey Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-timeline"></i> Timeline</span>
+                    <h2 class="section-title">Experience &amp; <span class="gradient-text">Milestones</span></h2>
+                    <p class="section-desc">My professional trajectory, key achievements, and educational journey.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h3 class="timeline-role">Full-Stack Web Developer</h3>
+                            <span class="timeline-company">Independent &amp; Freelance</span>
+                            <p class="timeline-desc">
+                                Designing and engineering tailored web applications for clients, implementing responsive user interfaces, integrating backend APIs, and streamlining deployment pipelines.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>React</span>
+                                <span>JavaScript / TS</span>
+                                <span>REST APIs</span>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - 2024</div>
+                            <h3 class="timeline-role">Frontend Developer &amp; Project Lead</h3>
+                            <span class="timeline-company">Tech Initiatives &amp; Open Source</span>
+                            <p class="timeline-desc">
+                                Contributed to open source repositories, built interactive component libraries, and optimized frontend bundle sizes for faster web experiences.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>UI/UX</span>
+                                <span>Modern CSS</span>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h3 class="timeline-role">Computer Science &amp; Software Development</h3>
+                            <span class="timeline-company">Education &amp; Core Training</span>
+                            <p class="timeline-desc">
+                                Built solid foundations in algorithms, data structures, software engineering methodologies, web development fundamentals, and database systems.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Algorithms</span>
+                                <span>Data Structures</span>
+                                <span>Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Great Together</span></h2>
+                    <p class="section-desc">Have an idea, project, or opportunity in mind? Feel free to drop a message.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p class="contact-lead">
+                            I'm always excited to discuss new projects, creative collaborations, or employment opportunities.
+                        </p>
+
+                        <div class="contact-cards">
+                            <a href="mailto:notnav681@gmail.com" class="contact-card">
+                                <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="card-title">Email Me</span>
+                                    <span class="card-detail">notnav681@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-card">
+                                <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="card-title">Location</span>
+                                    <span class="card-detail">Available for Remote Work Worldwide</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <span class="card-title">Response Time</span>
+                                    <span class="card-detail">Usually within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-section">
+                            <h4>Follow &amp; Connect</h4>
+                            <div class="social-links-large">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:notnav681@gmail.com" class="social-btn" aria-label="Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user input-icon"></i>
+                                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <span class="error-msg" id="name-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Your Email <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-bookmark input-icon"></i>
+                                    <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Opportunity">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-regular fa-message input-icon textarea-icon"></i>
+                                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-feedback" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#hero" class="logo">
+                    <span class="logo-bracket">&lt;</span>Goroi<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-motto">Crafting digital experiences with passion, curiosity, and attention to detail.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:notnav681@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> Goroi. All rights reserved.</p>
+                <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <span>Back to Top</span>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
