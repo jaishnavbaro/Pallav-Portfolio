@@ -1,4 +1,4 @@
-# Goroi - Modern Developer Portfolio
+# Pallav Goroi - Modern Developer Portfolio
 
 A sleek, responsive, and performance-oriented developer portfolio website featuring interactive animations, dark/light theme switching, project showcase filtering, dynamic typing effects, and contact validation.
 
@@ -36,15 +36,15 @@ Goroi Portfolio/
 
 ---
 
-## 🌐 Connecting & Pushing to GitHub
+## 🌐 Connected Remote Repository
 
-When you're ready to publish your website to GitHub:
+This repository is linked to GitHub:
+- **Repository:** [https://github.com/jaishnavbaro/Pallav-Portfolio](https://github.com/jaishnavbaro/Pallav-Portfolio)
+- **Branch:** `main`
 
-1. Create a new repository on [GitHub](https://github.com/new) (e.g. `goroi-portfolio`).
-2. Run the following commands in your terminal:
-
+To push future updates:
 ```bash
-git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
-git branch -M main
-git push -u origin main
+git add .
+git commit -m "Update portfolio content"
+git push
 ```
