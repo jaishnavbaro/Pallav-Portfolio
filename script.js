@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------
     const typedTextEl = document.getElementById('typed-text');
     const roles = [
-        'Full-Stack Developer.',
-        'Software Engineer.',
-        'Frontend Specialist.',
-        'Problem Solver.',
-        'Tech Enthusiast.'
+        'NEET Aspirant.',
+        'Pre-Medical Student.',
+        'Biology & Science Enthusiast.',
+        'Dedicated Learner.',
+        'Future Healthcare Professional.'
     ];
 
     let roleIndex = 0;

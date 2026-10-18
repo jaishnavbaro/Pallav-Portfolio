@@ -1,18 +1,17 @@
-# Pallav Goroi - Modern Developer Portfolio
+# Abhinav Pallav Baro - Academic Portfolio & Profile
 
-A sleek, responsive, and performance-oriented developer portfolio website featuring interactive animations, dark/light theme switching, project showcase filtering, dynamic typing effects, and contact validation.
+Personal website and academic portfolio of **Abhinav Pallav Baro**, a NEET Aspirant based in **Guwahati, Assam**, dedicated to science, medicine, and healthcare.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- **🌓 Dark & Light Mode:** Toggleable with persistent preference saved in `localStorage`.
-- **⌨️ Dynamic Hero Typewriter:** Automatically cycles through customizable roles and specializations.
-- **📱 Responsive Mobile Navigation:** Sticky header with glassmorphism blur and collapsible mobile drawer.
-- **🗂️ Project Filter Tabs:** Interactive categorization (Full-Stack, Frontend, Tools & APIs).
-- **📊 Animated Stats Counters:** Numbers animate into view upon scrolling.
-- **✉️ Interactive Contact Form:** Client-side validation with real-time feedback states.
-- **🎨 Glassmorphic & Modern Aesthetics:** Built using modern CSS variables, smooth transitions, and ambient glows.
+- **🌓 Dark & Light Theme:** Interactive toggle with memory saved in `localStorage`.
+- **⌨️ Dynamic Hero Typewriter:** Highlighting medical aspirations and academic focus.
+- **📱 Fully Responsive:** Mobile-first layout with glassmorphic sticky header and drawer menu.
+- **📚 Subjects & Competencies:** Categorized overview of Biology (Botany & Zoology), Chemistry, and Physics.
+- **🎯 Academic Focus & Initiatives:** Study frameworks, formula banks, and test analytics.
+- **✉️ Direct Contact Form:** Client-side validation with real-time feedback.
 
 ---
 
@@ -20,11 +19,11 @@ A sleek, responsive, and performance-oriented developer portfolio website featur
 
 ```text
 Goroi Portfolio/
-├── index.html        # Main HTML structure with semantic sections
-├── style.css         # Modern styling, CSS custom properties & responsive breakpoints
-├── script.js         # Typewriter, theme toggler, mobile menu, filters & form handling
+├── index.html        # Main semantic HTML structure
+├── style.css         # Modern design tokens, glassmorphism, responsive styles
+├── script.js         # Typewriter effect, theme toggler, filter tabs, animations
 ├── .gitignore        # Git ignore rules
-└── README.md         # Project documentation & Git instructions
+└── README.md         # Documentation & repository info
 ```
 
 ---
@@ -32,19 +31,12 @@ Goroi Portfolio/
 ## 🛠️ How to Preview in VS Code
 
 1. Open this folder in **VS Code**.
-2. Right-click on `index.html` and select **"Open with Live Server"** (if the Live Server extension is installed) or simply double-click `index.html` in file explorer to open it in any web browser.
+2. Right-click on `index.html` and choose **"Open with Live Server"** (or double-click `index.html` to open directly in your web browser).
 
 ---
 
 ## 🌐 Connected Remote Repository
 
-This repository is linked to GitHub:
+This repository is synced to GitHub:
 - **Repository:** [https://github.com/jaishnavbaro/Pallav-Portfolio](https://github.com/jaishnavbaro/Pallav-Portfolio)
 - **Branch:** `main`
-
-To push future updates:
-```bash
-git add .
-git commit -m "Update portfolio content"
-git push
-```
