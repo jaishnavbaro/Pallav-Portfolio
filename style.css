@@ -325,21 +325,183 @@ button {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-primary);
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     letter-spacing: -0.02em;
 }
 
-.logo-bracket {
+.logo-icon {
     color: var(--primary);
-    opacity: 0.8;
+    font-size: 1.25rem;
+}
+
+.logo-bracket {
+    display: none;
 }
 
 .logo-accent {
     color: var(--accent-cyan);
+}
+
+/* ===================================================================
+   Student Academic Dashboard Card Styles
+   =================================================================== */
+.student-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+    position: relative;
+}
+
+.student-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.3rem;
+    background: rgba(0, 0, 0, 0.28);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.student-card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.student-card-title i {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.student-streak-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.65rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #34d399;
+}
+
+.student-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.student-identity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.student-avatar-badge {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: #ffffff;
+    box-shadow: 0 4px 14px var(--glow-primary);
+}
+
+.student-name-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.student-exam {
+    font-size: 0.82rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.student-subjects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.student-subject-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.9rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.88rem;
+    transition: all var(--transition-fast);
+}
+
+.student-subject-row:hover {
+    border-color: var(--border-hover);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.subject-name {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.subject-name i {
+    font-size: 0.95rem;
+}
+
+.subject-name .icon-bio { color: #34d399; }
+.subject-name .icon-chem { color: #06b6d4; }
+.subject-name .icon-phys { color: #a855f7; }
+
+.subject-status {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-full);
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.student-quote {
+    padding: 0.85rem 1rem;
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.5;
 }
 
 .nav-list {

@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------
     const typedTextEl = document.getElementById('typed-text');
     const roles = [
-        'NEET Aspirant.',
         'Pre-Medical Student.',
+        'Dedicated NEET Aspirant.',
         'Biology & Science Enthusiast.',
-        'Dedicated Learner.',
+        'Disciplined Daily Learner.',
         'Future Healthcare Professional.'
     ];
 
