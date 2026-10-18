@@ -38,7 +38,7 @@
                     <li class="nav-item"><a href="#skills" class="nav-link">Subjects</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Study Focus</a></li>
                     <li class="nav-item"><a href="#experience" class="nav-link">Journey</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#math-game" class="nav-link">Math Game</a></li>
                 </ul>
             </nav>
 
@@ -49,7 +49,7 @@
                     <i class="fa-solid fa-sun sun-icon"></i>
                 </button>
 
-                <a href="#contact" class="btn btn-outline nav-cta">Get in Touch</a>
+                <a href="#math-game" class="btn btn-outline nav-cta"><i class="fa-solid fa-gamepad"></i> Play Math Game</a>
 
                 <!-- Mobile Hamburger Toggle -->
                 <button class="hamburger-btn" id="hamburger" aria-label="Open mobile menu">
@@ -95,9 +95,9 @@
                             <span>Subjects &amp; Notes</span>
                             <i class="fa-solid fa-flask-vial"></i>
                         </a>
-                        <a href="#contact" class="btn btn-ghost" title="Contact">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>Contact</span>
+                        <a href="#math-game" class="btn btn-ghost" title="Play Speed Math Game">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Math Game</span>
                         </a>
                     </div>
 
@@ -646,111 +646,175 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="section contact-section" id="contact">
+        <!-- Mathematics Game Section -->
+        <section class="section math-game-section" id="math-game">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Reach Out</span>
-                    <h2 class="section-title">Connect with <span class="gradient-text">Abhinav</span></h2>
-                    <p class="section-desc">Feel free to get in touch for academic discussions, study exchange, or general queries.</p>
+                    <span class="section-tag"><i class="fa-solid fa-calculator"></i> Brain Workout</span>
+                    <h2 class="section-title">Speed Math <span class="gradient-text">Challenge</span></h2>
+                    <p class="section-desc">Sharpen your mental arithmetic and problem-solving speed with this fast-paced math sprint.</p>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="contact-info-panel">
-                        <h3>Contact Information</h3>
-                        <p class="contact-lead">
-                            Glad to connect with fellow students, teachers, mentors, and science enthusiasts.
-                        </p>
-
-                        <div class="contact-cards">
-                            <a href="mailto:notnav681@gmail.com" class="contact-card">
-                                <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
-                                <div>
-                                    <span class="card-title">Email Me</span>
-                                    <span class="card-detail">notnav681@gmail.com</span>
-                                </div>
-                            </a>
-
-                            <div class="contact-card">
-                                <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                <div>
-                                    <span class="card-title">Study Base</span>
-                                    <span class="card-detail">Guwahati, Assam, India</span>
-                                </div>
+                <div class="math-game-container">
+                    <div class="math-game-card">
+                        <!-- Top HUD Bar -->
+                        <div class="game-hud">
+                            <div class="hud-item score-hud">
+                                <span class="hud-label">Score</span>
+                                <span class="hud-value" id="game-score">0</span>
                             </div>
-
-                            <div class="contact-card">
-                                <div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div>
-                                <div>
-                                    <span class="card-title">Current Study</span>
-                                    <span class="card-detail">NEET Preparation (Pre-Med)</span>
-                                </div>
+                            <div class="hud-item streak-hud">
+                                <span class="hud-label">Streak</span>
+                                <span class="hud-value" id="game-streak">🔥 0</span>
                             </div>
-                        </div>
-
-                        <div class="contact-social-section">
-                            <h4>Connect &amp; Follow</h4>
-                            <div class="social-links-large">
-                                <a href="mailto:notnav681@gmail.com" class="social-btn" aria-label="Email">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="https://github.com/jaishnavbaro" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
+                            <div class="hud-item timer-hud">
+                                <span class="hud-label">Time</span>
+                                <span class="hud-value" id="game-timer">60s</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="contact-form-panel">
-                        <form id="contact-form" class="contact-form" novalidate>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Your Name <span class="required">*</span></label>
-                                    <div class="input-wrapper">
-                                        <i class="fa-regular fa-user input-icon"></i>
-                                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                                    </div>
-                                    <span class="error-msg" id="name-error"></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="email">Your Email <span class="required">*</span></label>
-                                    <div class="input-wrapper">
-                                        <i class="fa-regular fa-envelope input-icon"></i>
-                                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
-                                    </div>
-                                    <span class="error-msg" id="email-error"></span>
-                                </div>
+                            <div class="hud-item best-hud">
+                                <span class="hud-label">High Score</span>
+                                <span class="hud-value" id="game-best">0</span>
                             </div>
-
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <div class="input-wrapper">
-                                    <i class="fa-regular fa-bookmark input-icon"></i>
-                                    <input type="text" id="subject" name="subject" placeholder="Study Discussion / Doubt / Inquiry">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message <span class="required">*</span></label>
-                                <div class="input-wrapper textarea-wrapper">
-                                    <i class="fa-regular fa-message input-icon textarea-icon"></i>
-                                    <textarea id="message" name="message" rows="5" placeholder="Write your message or inquiry here..." required></textarea>
-                                </div>
-                                <span class="error-msg" id="message-error"></span>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
-                                <span>Send Message</span>
-                                <i class="fa-solid fa-paper-plane"></i>
+                            <button class="sound-toggle-btn" id="game-sound-toggle" title="Toggle Sound" aria-label="Toggle Sound">
+                                <i class="fa-solid fa-volume-high" id="sound-icon"></i>
                             </button>
+                        </div>
 
-                            <div class="form-feedback" id="form-feedback"></div>
-                        </form>
+                        <!-- Timer Progress Bar -->
+                        <div class="timer-bar-container">
+                            <div class="timer-bar-fill" id="timer-bar-fill"></div>
+                        </div>
+
+                        <!-- Screen 1: Start Screen -->
+                        <div class="game-screen active" id="screen-start">
+                            <div class="start-content">
+                                <div class="math-trophy-badge">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h3 class="start-title">Ready for the Mental Math Sprint?</h3>
+                                <p class="start-desc">Test your mental reflexes! Solve arithmetic questions against the clock, build answer streaks, and beat your highest score.</p>
+
+                                <div class="game-settings">
+                                    <div class="setting-group">
+                                        <label class="setting-label">Select Difficulty:</label>
+                                        <div class="diff-btn-group">
+                                            <button type="button" class="diff-btn active" data-difficulty="easy">
+                                                <i class="fa-solid fa-seedling"></i>
+                                                <span>Easy (+ / -)</span>
+                                            </button>
+                                            <button type="button" class="diff-btn" data-difficulty="medium">
+                                                <i class="fa-solid fa-bolt"></i>
+                                                <span>Medium (× / ÷)</span>
+                                            </button>
+                                            <button type="button" class="diff-btn" data-difficulty="hard">
+                                                <i class="fa-solid fa-fire"></i>
+                                                <span>Genius (All Ops)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="setting-group">
+                                        <label class="setting-label">Round Duration:</label>
+                                        <div class="duration-btn-group">
+                                            <button type="button" class="duration-btn active" data-duration="60">60 Seconds</button>
+                                            <button type="button" class="duration-btn" data-duration="30">30 Seconds</button>
+                                            <button type="button" class="duration-btn" data-duration="90">90 Seconds</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-primary btn-start-game" id="btn-start-game">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>Start Challenge</span>
+                                </button>
+                                <p class="keyboard-tip"><i class="fa-regular fa-keyboard"></i> Tip: Use number keys [1], [2], [3], [4] or tap the options to answer quickly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Screen 2: Active Playing Screen -->
+                        <div class="game-screen" id="screen-play">
+                            <div class="question-header">
+                                <span class="multiplier-pill" id="multiplier-pill">1x Multiplier</span>
+                                <span class="question-counter" id="question-counter">Question 1</span>
+                            </div>
+
+                            <div class="question-arena" id="question-arena">
+                                <div class="math-question-box">
+                                    <span class="math-equation" id="equation-display">12 + 15 = ?</span>
+                                </div>
+                            </div>
+
+                            <div class="options-grid" id="options-grid">
+                                <button type="button" class="option-btn" data-index="0">
+                                    <span class="opt-key">1</span>
+                                    <span class="opt-val">27</span>
+                                </button>
+                                <button type="button" class="option-btn" data-index="1">
+                                    <span class="opt-key">2</span>
+                                    <span class="opt-val">25</span>
+                                </button>
+                                <button type="button" class="option-btn" data-index="2">
+                                    <span class="opt-key">3</span>
+                                    <span class="opt-val">30</span>
+                                </button>
+                                <button type="button" class="option-btn" data-index="3">
+                                    <span class="opt-key">4</span>
+                                    <span class="opt-val">22</span>
+                                </button>
+                            </div>
+
+                            <div class="play-footer">
+                                <button type="button" class="btn btn-ghost btn-quit-game" id="btn-quit-game">
+                                    <i class="fa-solid fa-stop"></i> End Round Early
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Screen 3: Game Over Screen -->
+                        <div class="game-screen" id="screen-over">
+                            <div class="game-over-content">
+                                <div class="game-over-badge" id="game-over-icon">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <h3 class="over-title" id="over-title">Round Complete!</h3>
+                                <p class="over-subtitle" id="over-subtitle">Outstanding calculation reflexes!</p>
+
+                                <div class="over-stats-grid">
+                                    <div class="over-stat-item">
+                                        <span class="over-stat-label">Final Score</span>
+                                        <span class="over-stat-value highlight" id="over-score">0</span>
+                                    </div>
+                                    <div class="over-stat-item">
+                                        <span class="over-stat-label">Accuracy</span>
+                                        <span class="over-stat-value" id="over-accuracy">0%</span>
+                                    </div>
+                                    <div class="over-stat-item">
+                                        <span class="over-stat-label">Best Streak</span>
+                                        <span class="over-stat-value" id="over-streak">0</span>
+                                    </div>
+                                    <div class="over-stat-item">
+                                        <span class="over-stat-label">Correct / Attempted</span>
+                                        <span class="over-stat-value" id="over-solved">0 / 0</span>
+                                    </div>
+                                </div>
+
+                                <div class="over-rank-card" id="over-rank-card">
+                                    <span class="rank-tag">Performance Rating</span>
+                                    <h4 class="rank-title" id="rank-title">Speed Demon ⚡</h4>
+                                </div>
+
+                                <div class="over-buttons">
+                                    <button type="button" class="btn btn-primary" id="btn-play-again">
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                        <span>Play Again</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline" id="btn-change-diff">
+                                        <i class="fa-solid fa-sliders"></i>
+                                        <span>Change Settings</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

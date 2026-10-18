@@ -11,7 +11,7 @@ Personal website and academic portfolio of **Abhinav Pallav Baro**, a NEET Aspir
 - **📱 Fully Responsive:** Mobile-first layout with glassmorphic sticky header and drawer menu.
 - **📚 Subjects & Competencies:** Categorized overview of Biology (Botany & Zoology), Chemistry, and Physics.
 - **🎯 Academic Focus & Initiatives:** Study frameworks, formula banks, and test analytics.
-- **✉️ Direct Contact Form:** Client-side validation with real-time feedback.
+- **⚡ Interactive Speed Math Game:** Fast-paced mental arithmetic challenge with streak multipliers, audio synth effects, multiple difficulty modes, and persistent high score tracking.
 
 ---
 
